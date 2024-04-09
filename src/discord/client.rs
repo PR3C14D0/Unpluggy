@@ -4,8 +4,8 @@ pub struct Client {
 }
 
 
-impl discord::Client {
-    pub fn new(token: String, intents: u32) {
-
+impl Client {
+    pub fn new(token: String, intents: u32) -> Client {
+        Client { token, intents }
     }
 }
